@@ -17,17 +17,17 @@ window.onmousemove = e => {
 
     let percentage = (mouseDelta / maxDelta) * -100,
         nextPercentage = parseFloat(track.dataset.prevPercentage) + percentage;
-    
-//    nextPercentage = Math.min(nextPercentage, -100);
-    nextPercentage = Math.max(nextPercentage, 0);
 
-        track.dataset.percentage = nextPercentage;
+    track.dataset.percentage = nextPercentage;
+
+    nextPercentage = Math.min(nextPercentage, 0);
+    nextPercentage = Math.max(nextPercentage, -100);
 
     track.animate({
         transform: `translate(${nextPercentage}%, -50%)`}, {duration: 1200, fill: "forwards"});
 
     for (const image of track.getElementsByClassName("img")){
         image.animate({
-            objectPosition: `${nextPercentage}% center`}, {duration:1200, fill: "forwards"})
+            objectPosition: `${nextPercentage+100}% center`}, {duration:1200, fill: "forwards"})
     }
 }

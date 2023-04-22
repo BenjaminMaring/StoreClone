@@ -10,15 +10,20 @@ body {
     height: 56vmin;
     width: 40vmin;
     object-fit: cover;
-    object-position: center;
+    object-position: 100% 50%;
 }
 
 #image-track{
     display: flex;
     gap: 3vmin;
     position: absolute;
-    left: 5%;
+    left: 30%;
     top: 50%;
     transform: translate(0, -50%);
 }
 
+#nav {
+    height: 30px;
+    width: 100vw;
+    background-color: white;
+}
