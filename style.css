@@ -17,7 +17,7 @@ body {
     display: flex;
     gap: 3vmin;
     position: absolute;
-    left: 50%;
+    left: 5%;
     top: 50%;
     transform: translate(0, -50%);
 }
