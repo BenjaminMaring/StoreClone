@@ -21,7 +21,7 @@ window.onmousemove = e => {
     track.dataset.percentage = nextPercentage;
 
     nextPercentage = Math.min(nextPercentage, 0);
-    nextPercentage = Math.max(nextPercentage, -100);
+    nextPercentage = Math.max(nextPercentage, -90);
 
     track.animate({
         transform: `translate(${nextPercentage}%, -50%)`}, {duration: 1200, fill: "forwards"});

@@ -1,9 +1,20 @@
+/* 
+some default colors to maybe use: #CC2936 (red-ish), #6667AB (blue-ish), #F5F0F6 (white-ish), #211a28 (black-ish)
+*/
+
 body {
     height: 100vh;
     width: 100vw;
-    background-color: black;
-    overflow: hidden;
     margin: 0rem;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #F5F0F6;
+    font-family: monospace;
+    width: 33vw;
+    display: flex;
+    justify-content: space-around;
 }
 
 #image-track > .img{
@@ -17,13 +28,31 @@ body {
     display: flex;
     gap: 3vmin;
     position: absolute;
-    left: 30%;
-    top: 50%;
+    left: 3vmin;
+    top: 1145px;
     transform: translate(0, -50%);
 }
 
 #nav {
-    height: 30px;
+    height: 60px;
     width: 100vw;
-    background-color: white;
+    background-color: #211a28;
+    display: flex;
+}
+
+#main-body {
+    background-image: url(https://outdoorretailer.com/wp-content/uploads/2021/03/or_mag_3_21_4.jpg);
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+#buffer {
+    height: 650px;
+    background-color: #211a28;
+}
+
+#footer {
+    height: 200px;
 }
