@@ -16,10 +16,8 @@ h1 {
     font-size: 35px;
 }
 
-td {
-    color: #F5F0F6;
-    font-family: monospace;
-    font-size: 18px;
+h2 {
+    margin: 0px;
 }
 
 
@@ -61,15 +59,27 @@ td {
     left: 0%;
     top: calc(100% + .5rem);
     background-color: #211a28;
-    padding: 1rem;
     border-radius: .25rem;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
     opacity: 0;
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
     transform: translateY(-10px);
-    transform: translateX(-140px);
-    width: 150px;
+    transform: translateX(-120px);
+    width: 125px;
+    height: 150px;
     color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content {
+    padding: 1px;
+}
+
+.content:hover {
+color: #ff3748;
 }
 
 .dropTable{
