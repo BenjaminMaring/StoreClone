@@ -2,6 +2,9 @@
 <head>
     <title>Store</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
 </head>
 <body>
 
@@ -13,7 +16,7 @@
             <h1 style="Padding-left: 3px;">Taxadermy</h1>
         </div>
         <div class="rightNav">
-            <h1>Mounts</h1>
+            <h1 style="margin: 0px;">Mounts</h1>
                 <div class="dropdown">
                     <img onClick="drop()" id="chevron" src="chevron.png">
                     <div id="dropdownMenu">
@@ -22,15 +25,25 @@
                         <h2 class="content">Turkey</h2>
                     </div>
                 </div>
-            
-            <h1>Place an Order</h1>
-            <h1>Contact Us</h1>
+                <img class="navBar" src="navBar.png">
+            <h1>Pricing</h1>
+            <img class="navBar" src="navBar.png">
+            <h1>About Us</h1>
         </div>
-
     </nav>
 
     <div id="main-body">
-        
+        <p class ="title">Red Duck Taxadermy</p>
+        <div class="menu">
+            <div class="node">
+                <h1 style="margin: 20px; font-size: 45px;">Mount Your Trophy</h1>
+                <button class="menuButton">Mount</button>
+            </div>
+            <div class="node">
+                <h1 style="margin: 20px; font-size: 45px;">Preview our Gallary</h1>
+                <button class="menuButton">Gallary</button>
+            </div>
+        </div>
     </div>
 
     <div id="buffer"> 
@@ -50,7 +63,18 @@
     </div>
 
     <div id="footer">
-
+        <div class="linksPage">
+            <a class ="footerLinks"href="">Mounts</a>
+            <a class="footerLinks"href="">Pricing</a>
+            <a class="footerLinks"href="">About us</a>
+        </div>
+        <div class="address">
+            <p>1 (209) 123-1234</p>
+            <p>email@putEmailHere.com</p>
+            <p>1234 example Ave</p>
+            <p>Valley Springs, CA</p>
+        </div>
+        <div style="color: white;"><p>social links</p></div>
     </div>
 
     <script src="shop.js"></script>

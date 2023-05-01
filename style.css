@@ -1,6 +1,10 @@
 /* 
 some default colors to maybe use: #ff3748 (red-ish), #6667AB (blue-ish), #F5F0F6 (white-ish), #211a28 (black-ish)
 */
+* {
+    padding: 0px;
+    margin: 0px;
+}
 
 body {
     height: 100vh;
@@ -12,14 +16,18 @@ body {
 
 h1 {
     color: #F5F0F6;
-    font-family: monospace;
+    font-family: 'Roboto Slab', serif;
     font-size: 35px;
+    margin: 0px 10px 0px 10px;
 }
 
 h2 {
     margin: 0px;
 }
 
+p {
+    padding: 5px;
+}
 
 #nav {
     height: 70px;
@@ -42,6 +50,11 @@ h2 {
     width: 60vw;
     align-items: center;
     justify-content: right;
+}
+
+.navBar {
+    height: 30px;
+    margin: 0px 5px 0px 5px; 
 }
 
 #chevron{
@@ -69,6 +82,7 @@ h2 {
     height: 150px;
     color: white;
     font-size: 18px;
+    font-family: 'Roboto Slab', serif;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -100,25 +114,8 @@ color: #ff3748;
     gap: 3vmin;
     position: absolute;
     left: 3vmin;
-    top: 1100px;
+    top: 1000px;
     transform: translate(0, -50%);
-}
-
-#main-body {
-    background-image: url(https://outdoorretailer.com/wp-content/uploads/2021/03/or_mag_3_21_4.jpg);
-    background-size: cover;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-}
-
-#buffer {
-    height: 650px;
-    background-color: #211a28;
-}
-
-#footer {
-    height: 200px;
 }
 
 .scrollText {
@@ -131,3 +128,94 @@ color: #ff3748;
     justify-content: center;
     user-select: none;
 }
+
+#main-body {
+    /* background-image: url(https://outdoorretailer.com/wp-content/uploads/2021/03/or_mag_3_21_4.jpg); */
+    background-image: url(TaxMain.gif);
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: white;
+    font-size: 80px;
+    font-family: 'Roboto Slab', serif;
+    padding-top: 1vh;
+    margin-bottom: 0px;
+}
+
+.menu {
+    margin-top: 10vh;
+    display: flex;
+}
+
+.node{
+    font-family: 'Roboto Slab', serif;
+    border-radius: 10px;
+    width: 35vw;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.menuButton {
+    height: 100px;
+    width: 150px;
+    color: white;
+    background-color:rgba(0, 0, 0, 0);
+    font-size: 40px;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 5px;
+    background-color:#211a28;
+}
+
+.menuButton:hover {
+    color: #ff3748;
+}
+
+#buffer {
+    height: 610px;
+    background-color: #211a28;
+}
+
+#footer {
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 3px solid #6a6a6a;
+    background-color: #211a28;
+}
+
+.linksPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerLinks {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.footerLinks:hover {
+    color:#ff3748;
+}
+
+.address {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
