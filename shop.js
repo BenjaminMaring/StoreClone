@@ -1,7 +1,4 @@
 const track = document.getElementById("image-track");
-const chevron = document.getElementById("chevron");
-const dropdown = document.getElementById("dropdownMenu");
-let check=false;
 
 window.onmousedown = e => {
     track.dataset.mouseDownAt = e.clientX;
@@ -33,23 +30,10 @@ window.onmousemove = e => {
     // while they are moving, however it seem to cause some loading issues
     // and is not consitently smooth. for now, I am going to leave it out, 
     // although its cool when it works
-    //
+    
     // for (const image of track.getElementsByClassName("img")){
     //     image.animate({
     //         objectPosition: `${nextPercentage+100}% center`}, {duration:2000, fill: "forwards"})
     // }
 
 }// end onmousemove
-
-drop = () => {
-    if (check === false) {
-        check=true;
-        chevron.animate({rotate: "-90deg"}, { duration: 100, fill: "forwards" });
-        dropdown.style.opacity=1;
-    }
-    else if (check===true){
-        check=false;
-        chevron.animate({rotate: "0deg"}, { duration: 100, fill: "forwards" });
-        dropdown.style.opacity=0;
-    }
-}

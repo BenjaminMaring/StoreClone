@@ -23,10 +23,15 @@ h1 {
 
 h2 {
     margin: 0px;
+    color: white;
+    font-family: 'Roboto Slab', serif;
 }
 
 p {
     padding: 5px;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
 }
 
 #nav {
@@ -72,6 +77,7 @@ p {
     left: 0%;
     top: calc(100% + .5rem);
     background-color: #211a28;
+    border: 2px solid white;
     border-radius: .25rem;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
     opacity: 0;
@@ -84,7 +90,7 @@ p {
     font-size: 18px;
     font-family: 'Roboto Slab', serif;
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -94,6 +100,19 @@ p {
 
 .content:hover {
 color: #ff3748;
+}
+
+.navLink {
+    color: #F5F0F6;
+    font-family: 'Roboto Slab', serif;
+    font-size: 35px;
+    margin: 0px 10px 0px 10px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.navLink:hover {
+    color:#ff3748;
 }
 
 .dropTable{
@@ -217,5 +236,40 @@ color: #ff3748;
     justify-content: center;
     align-items: center;
     font-size: 24px;
+}
+
+.contactBody {
+    width: 100vw;
+    height: 70.9vh;
+    background-color:#ff3748;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.infoWrapper {
+    height: 33vw;
+    width: 40vw;
+    background-color:#211a28;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.finalWrap {
+    display:flex; 
+    align-items:center;
+    justify-content: space-around;
+    width: 40vw;
+
+}
+
+.contactPic {
+    border: 2px solid #211a28;
+    border-radius: 20px;
+    
 }
 
