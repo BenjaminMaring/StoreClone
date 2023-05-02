@@ -35,7 +35,8 @@ p {
 }
 
 #nav {
-    height: 70px;
+    height: 7vh;
+    min-height: 60px;
     width: 100vw;
     background-color: #211a28;
     display: flex;
@@ -43,7 +44,7 @@ p {
 
 #nav > .leftNav {
     display: flex;
-    height: 70px;
+    
     width: 33vw;
     align-items: center;
     padding-left: 6vw;
@@ -51,7 +52,6 @@ p {
 
 #nav > .rightNav {
     display: flex;
-    height: 70px;
     width: 60vw;
     align-items: center;
     justify-content: right;
@@ -105,7 +105,7 @@ color: #ff3748;
 .navLink {
     color: #F5F0F6;
     font-family: 'Roboto Slab', serif;
-    font-size: 35px;
+    font-size: 2vw;
     margin: 0px 10px 0px 10px;
     text-decoration: none;
     font-weight: bolder;
@@ -122,19 +122,18 @@ color: #ff3748;
 
 #image-track > .img{
     height: 56vmin;
+    min-height: 200px;
     width: 40vmin;
+    min-width: 142px;
     object-fit: cover;
     object-position: 100% 50%;
     user-select: none;
 }
 
-#image-track{
+#image-track {
     display: flex;
+    width: 100vw;
     gap: 3vmin;
-    position: absolute;
-    left: 3vmin;
-    top: 1000px;
-    transform: translate(0, -50%);
 }
 
 .scrollText {
@@ -199,12 +198,14 @@ color: #ff3748;
 }
 
 #buffer {
-    height: 610px;
+    height: 65vh;
+    min-height: 275px;
     background-color: #211a28;
 }
 
 #footer {
-    height: 200px;
+    height: 20vh;
+    min-height: 200px;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -240,8 +241,8 @@ color: #ff3748;
 
 .contactBody {
     width: 100vw;
-    height: 70.9vh;
-    background-color:#ff3748;
+    height: 74vh;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-evenly;

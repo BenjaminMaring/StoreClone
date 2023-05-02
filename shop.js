@@ -24,7 +24,7 @@ window.onmousemove = e => {
     nextPercentage = Math.max(nextPercentage, -90);
 
     track.animate({
-        transform: `translate(${nextPercentage}%, -50%)`}, {duration: 1200, fill: "forwards"});
+        transform: `translate(${nextPercentage}%, 0%)`}, {duration: 1200, fill: "forwards"});
 
     // The below code is used to add a sliding effect to the pictures as well
     // while they are moving, however it seem to cause some loading issues
