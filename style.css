@@ -242,7 +242,7 @@ color: #ff3748;
 .contactBody {
     width: 100vw;
     height: 74vh;
-    background-color: white;
+    background: white;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
