@@ -17,7 +17,7 @@ body {
 h1 {
     color: #F5F0F6;
     font-family: 'Roboto Slab', serif;
-    font-size: 35px;
+    font-size: 2vw;
     margin: 0px 10px 0px 10px;
 }
 
@@ -44,7 +44,6 @@ p {
 
 #nav > .leftNav {
     display: flex;
-    
     width: 33vw;
     align-items: center;
     padding-left: 6vw;
@@ -121,10 +120,9 @@ color: #ff3748;
 }
 
 #image-track > .img{
-    height: 56vmin;
-    min-height: 200px;
-    width: 40vmin;
-    min-width: 142px;
+    height: 56vh;
+    min-height: 425px;
+    max-width: 350px;
     object-fit: cover;
     object-position: 100% 50%;
     user-select: none;
@@ -159,7 +157,7 @@ color: #ff3748;
 
 .title {
     color: white;
-    font-size: 80px;
+    font-size: 5vw;
     font-family: 'Roboto Slab', serif;
     padding-top: 1vh;
     margin-bottom: 0px;
@@ -199,7 +197,7 @@ color: #ff3748;
 
 #buffer {
     height: 65vh;
-    min-height: 275px;
+    min-height: 500px;
     background-color: #211a28;
 }
 
@@ -242,7 +240,8 @@ color: #ff3748;
 .contactBody {
     width: 100vw;
     height: 74vh;
-    background: white;
+    background-image: url(Yosemite.jpg);
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -265,7 +264,6 @@ color: #ff3748;
     align-items:center;
     justify-content: space-around;
     width: 40vw;
-
 }
 
 .contactPic {
