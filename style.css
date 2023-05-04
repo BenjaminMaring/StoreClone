@@ -18,7 +18,11 @@ h1 {
     color: #F5F0F6;
     font-family: 'Roboto Slab', serif;
     font-size: 2vw;
-    margin: 0px 10px 0px 10px;
+    margin: 0px .2vw 0px .2vw;
+}
+
+.red {
+    color: #ff3748;
 }
 
 h2 {
@@ -201,6 +205,11 @@ color: #ff3748;
     background-color: #211a28;
 }
 
+/* Below is the CSS for the Footer */
+/* 
+*/
+/* 
+ */
 #footer {
     height: 20vh;
     min-height: 200px;
@@ -228,19 +237,16 @@ color: #ff3748;
     color:#ff3748;
 }
 
-.address {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-}
 
+/* Below is the CSS for specifically any code pertaining to the contact page */
+/* 
+*/
+/* 
+*/
 .contactBody {
     width: 100vw;
     height: 74vh;
-    background-image: url(Yosemite.jpg);
+    background-image: url(Yosemite1.jpg);
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -249,7 +255,9 @@ color: #ff3748;
 
 .infoWrapper {
     height: 33vw;
+    min-height: 350px;
     width: 40vw;
+    min-width: 400px;
     background-color:#211a28;
     border-radius: 20px;
     display: flex;
@@ -263,12 +271,20 @@ color: #ff3748;
     display:flex; 
     align-items:center;
     justify-content: space-around;
-    width: 40vw;
+    width: 100%;
 }
 
-.contactPic {
-    border: 2px solid #211a28;
-    border-radius: 20px;
-    
+.wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
+.address {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
