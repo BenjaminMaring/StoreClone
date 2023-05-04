@@ -6,54 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ContactUs</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
     </style>
 </head>
 <body>
     
-    <nav id="nav">
-        <div class="leftNav">
-            <h1 style="justify-content: right;">Red</h1>
-            <a class="navLink" href="index.html" style="color:#ff3748; font-family: 'Roboto Slab', serif;">Duck</a>
-            <h1>Taxadermy</h1>
-        </div>
-        <div class="rightNav">
-            <a class="navLink" href="AboutUs.html">Mounts</a>
-                <div class="dropdown">
-                    <img onClick="drop()" id="chevron" src="pictures\chevron.png">
-                    <div id="dropdownMenu">
-                        <h2 class="content">Deer</h2>
-                        <h2 class="content">Idk</h2>
-                        <h2 class="content">Turkey</h2>
-                    </div>
-                </div>
-                <img class="navBar" src="pictures\navBar.png">
-                <a class="navLink" href="AboutUs.html">Pricing</a>
-            <img class="navBar" src="pictures\navBar.png">
-            <a class="navLink" href="AboutUs.html">About Us</a>
-            <img class="navBar" src="pictures\navBar.png">
-            <a class="navLink" href="contact.html">Contact Us</a>
-        </div>
-    </nav>
-
     <div class="contactBody">
-        <div class="infoWrapper">
-            <h1 style="font-size:calc(35px + 1.5vw);">Contact Us</h1>
-            <div class="wrap">
-                <p style="font-size:calc(16px + 1.5vw);">Monday-Friday: 8am-9pm</p>
-                <p style="font-size:calc(14px + 1.5vw);">Call, text, or Email anytime</p>
+        <nav id="nav">
+            <div class="leftNav">
+                <a class="navLink"href="index.html">Red Duck Taxadermy</a>
             </div>
-            <div class="finalWrap">
-                <div style="display: flex; flex-direction: column; align-items: center;">
-                    <p style="font-size:calc(8px + 1.4vw);">1234 address drive</p>
-                    <p style="font-size:calc(8px + 1.4vw);">Valley Springs, CA</p>
-                    <p style="font-size:calc(8px + 1.4vw);">95252</p>
+            <div class="rightNav">
+                    <div class="dropdown">
+                        <div style="padding: 0px;">
+                            <a class="navLink" href="AboutUs.html">Mounts</a>
+                            <img onClick="drop()" id="chevron" src="pictures\chevron.png">
+                        </div>
+                        <div id="dropdownMenu">
+                            <h2 class="content">Deer</h2>
+                            <h2 class="content">Idk</h2>
+                            <h2 class="content">Turkey</h2>
+                        </div>
+                    </div>
+                <a class="navLink" href="AboutUs.html">Pricing</a>
+                <a class="navLink" href="AboutUs.html">About Us</a>
+                <a class="navSelected" href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+
+        <div style="display: flex; align-items: center; justify-content: space-evenly; height: 80%; flex-direction: column;">
+            <h1 style="font-size:calc(35px + 5vw);">We Are Here to Help</h1>
+        </div>
+    </div>
+
+    <div class="info-section">
+        <div class="third">
+            <img class="map" src="pictures/map.jpg">
+        </div>
+
+
+        <div class="third last"> 
+            <p style="font-size: 55px;">Let's Talk</p>
+            <br><br><br>
+            <div class="infowrap">
+                <div style="display: flex;">
+                    <span class="material-symbols-outlined" id="adjust">call</span>
+                    <p>+1 (209) 123-1234</p>
                 </div>
-                <div style="display: flex; flex-direction: column; align-items: center;">
-                    <p style="font-size:calc(10px + 1.2vw);">+1 (209) 123 45678</p>
-                    <p style="font-size:calc(10px + 1.2vw);">email@putEmailHere.com</p>
+                <div style="display: flex; padding: 5px;">
+                    <span class="material-symbols-outlined" id="mail">mail</span>
+                    <p>emailHere@emailexample.com</p>
                 </div>
+                <div style="display: flex;">
+                    <span class="material-symbols-outlined" id="adjust">location_on</span>
+                    <p>1111 Bobby Lane, Pioneer CA</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="third">
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <p style="font-size: 50px;">Questions or Concerns?</p>
+                <br><br><br>
+                <p>Call, Email, or text any time. A member of our team will respond as quickly as possible.</p>
+                <br><br>
             </div>
         </div>
     </div>
