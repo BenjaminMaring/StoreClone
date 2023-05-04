@@ -44,6 +44,8 @@ p {
     width: 100vw;
     background-color: #211a28;
     display: flex;
+    position: sticky;
+    top: 0px;
 }
 
 #nav > .leftNav {
