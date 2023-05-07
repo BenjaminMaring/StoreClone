@@ -4,7 +4,7 @@ buffer.onmousedown = e => {
     track.dataset.mouseDownAt = e.clientX;
 }
 
-buffer.onmouseup = () => {
+window.onmouseup = () => {
     track.dataset.mouseDownAt = "0";
     track.dataset.prevPercentage = parseFloat(track.dataset.percentage);
 }
