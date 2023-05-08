@@ -202,18 +202,22 @@ color: #ff3748;
 }
 
 .menuButton {
-    height: 100px;
-    width: 150px;
+    /* height: 100px;
+    width: 150px; */
     color: #F5F0F6;
-    background-color:rgba(0, 0, 0, 0);
     font-size: 40px;
     font-family: 'Inter', sans-serif;
-    border-radius: 5px;
-    background-color:#211a28;
+    border: 2px solid #F5F0F6;
+    border-radius: 4px;
+    background-color: transparent;
+    text-decoration: underline transparent;
+    transition: text-decoration 300ms ease;
+    padding: 10px;
 }
 
 .menuButton:hover {
-    color: #ff3748;
+    text-decoration-color: #ff3748;
+    background-color:#211a28
 }
 
 #buffer {
